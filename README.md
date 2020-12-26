@@ -1,2 +1,2 @@
-# js-website
- Using alot of javascript fro my practice
+# Cool-website
+ Using alot of javascript for my practice
