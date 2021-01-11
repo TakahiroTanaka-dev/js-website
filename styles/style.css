@@ -43,6 +43,11 @@
           transform: translate(-50%, -50%);
 }
 
+.hero {
+  overflow: hidden;
+  padding-top: 100px;
+}
+
 .hero__title {
   position: absolute;
   top: 50%;
@@ -133,6 +138,26 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+body {
+  font-family: 'Cabin', 'Sawarabi Gothic', sans-serif;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 17px;
+}
+
+.font-lr {
+  font-size: 17px;
+}
+
+.font-lg {
+  font-size: 25px;
+}
+
 @media screen and (max-width: 480px) {
   /******************************************************************
 
@@ -155,6 +180,18 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .font-sm {
+    font-size: 16px;
+  }
+  .font-md {
+    font-size: 19px;
+  }
+  .font-lr {
+    font-size: 23px;
+  }
+  .font-lg {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 1280px) {

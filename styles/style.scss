@@ -2,29 +2,29 @@
 @import 'modules/mixin';
 @import 'modules/hero-slider';
 
-@import 'styles/breakpoints/base';
+@import 'breakpoints/base';
 
 @media screen and (max-width: 480px){
-  @import 'styles/breakpoints/480up';
+  @import 'breakpoints/480up';
 }
 
 @media screen and (max-width: 600px){
-  @import 'styles/breakpoints/600up';
+  @import 'breakpoints/600up';
 }
 
 @media screen and (max-width: 960px){
-  @import 'styles/breakpoints/960up';
+  @import 'breakpoints/960up';
 }
 
 @media screen and (max-width: 1280px){
-  @import 'styles/breakpoints/1280up';
+  @import 'breakpoints/1280up';
 }
 
 @media (min-resolution: 192dpi),
       (-webkit-min-device-pixel-ration: 2){
-        @import 'styles/breakpoints/2x';
+        @import 'breakpoints/2x';
       }
 
 @media print {
-  @import 'styles/breakpoints/print';
+  @import 'breakpoints/print';
 }
