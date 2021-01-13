@@ -50,3 +50,37 @@ img {
   margin:0 auto;
   max-width: $contentMaxWidth;
 }
+
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.houses{
+  @extend .content-width;
+
+  &__inner{
+    @extend .flex;  
+  }
+
+  &__title{
+    @extend .font-lr;
+    @extend .mb-sm;
+  }
+
+  &__btn{
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+
+.main-title{
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title{
+  @extend .font-sm;
+  color: $cSubTitle;
+}
