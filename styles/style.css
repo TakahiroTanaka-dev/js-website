@@ -344,7 +344,6 @@
 .cover-slide {
   position: relative;
   overflow: hidden;
-  margin-bottom: 80vh;
 }
 
 .cover-slide::after {

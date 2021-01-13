@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     } 　
 
+    const inview = function (el, inview){
+        if(inview){
+            el.classList.add('inview');
+        } else {
+            el.classList.remove('inview')
+        }
+    }
+
     const so = new ScrollObserver('.tween-animate-title', cb);
+
+    const so2 = new ScrollObserver('.tween-animate-title', inview);
 });
 
