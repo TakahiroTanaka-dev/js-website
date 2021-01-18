@@ -430,10 +430,6 @@
   }
 }
 
-.img-zoom, .bg-img-zoom {
-  opacity: 0;
-}
-
 .inview .img-zoom, .inview .bg-img-zoom {
   opacity: 1;
   -webkit-transition: -webkit-transform 0.3s ease;
