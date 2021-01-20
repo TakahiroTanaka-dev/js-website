@@ -56,6 +56,14 @@ img {
   flex-direction: column;
 }
 
+.travel{
+  @extend .content-width;
+
+  &__inner{
+    @extend .flex;
+  }
+}
+
 .houses{
   @extend .content-width;
 

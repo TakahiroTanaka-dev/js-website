@@ -783,13 +783,13 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .houses, .popular__header, .popular__container {
+.content-width, .travel, .houses, .popular__header, .popular__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
 }
 
-.flex, .houses__inner, .popular__container {
+.flex, .travel__inner, .houses__inner, .popular__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,7 +867,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .houses__inner, .popular__container {
+  .flex, .travel__inner, .houses__inner, .popular__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -886,6 +886,10 @@ Stylesheet: 600px以上のタブレットやモニタで適用
             justify-content: space-between;
   }
   .popular__item {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .travel__texts, .travel__image {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }

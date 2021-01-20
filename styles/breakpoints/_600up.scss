@@ -25,3 +25,11 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     flex-basis: 47%;
   }
 }
+
+.travel{
+  &__texts,
+  &__image
+  {
+    flex-basis: 47%;
+  }
+}
