@@ -799,6 +799,18 @@ img {
           flex-direction: column;
 }
 
+.purple {
+  color: #904669;
+}
+
+.travel__inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: #eaebe6;
+}
+
 .houses__btn {
   text-align: center;
   -ms-flex-preferred-size: 100%;

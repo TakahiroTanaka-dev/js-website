@@ -56,11 +56,18 @@ img {
   flex-direction: column;
 }
 
+.purple{
+  color: $cWineRed;
+}
+
 .travel{
   @extend .content-width;
 
   &__inner{
     @extend .flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $cBgGray;
   }
 }
 
