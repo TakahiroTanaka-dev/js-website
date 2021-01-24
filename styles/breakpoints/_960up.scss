@@ -41,3 +41,14 @@ Stylesheet: 960px以上のモニタで適用
     height: 365px;
   }
 }
+
+.travel{
+
+  &__image{
+    height: 400px;
+  }
+
+  &__description{
+    margin-bottom: 40px;
+  }
+}

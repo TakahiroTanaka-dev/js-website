@@ -767,7 +767,7 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .houses__title, .popular__title {
+.mb-sm, .travel__sub, .travel__image, .houses__title, .popular__title {
   margin-bottom: 16px !important;
 }
 
@@ -775,7 +775,7 @@ img {
   margin-bottom: 80px !important;
 }
 
-.pb-sm, .popular__container {
+.pb-sm, .travel__texts, .popular__container {
   padding-bottom: 16px !important;
 }
 
@@ -809,6 +809,17 @@ img {
           justify-content: space-between;
   padding: 15px;
   background-color: #eaebe6;
+}
+
+.travel__image {
+  height: 300px;
+}
+
+.travel__image > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .houses__btn {
@@ -901,9 +912,20 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
+  .travel__inner {
+    padding: 50px;
+  }
   .travel__texts, .travel__image {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
+  }
+  .travel__texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -943,6 +965,12 @@ Stylesheet: 960px以上のモニタで適用
   .popular__img {
     height: 365px;
   }
+  .travel__image {
+    height: 400px;
+  }
+  .travel__description {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -951,6 +979,9 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .travel__inner {
+    padding: 50px 150px;
+  }
   .popular__item {
     -ms-flex-preferred-size: 23%;
         flex-basis: 23%;
