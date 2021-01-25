@@ -783,7 +783,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .travel, .houses, .popular__header, .popular__container {
+.content-width, .travel, .houses, .popular__header, .popular__container, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -915,6 +915,25 @@ img {
      object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.logo {
+  font-size: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo__img {
+  width: 0.7em;
+}
+
+.logo__stay {
+  color: blue;
+}
+
+.footer {
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 480px) {

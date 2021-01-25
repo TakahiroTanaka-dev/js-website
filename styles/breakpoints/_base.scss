@@ -195,3 +195,25 @@ img {
     }
   }
 }
+
+.logo{
+  font-size: 42px;
+  display: flex;
+
+  &__img{
+    width: 0.7em;
+  }
+
+  &__stay{
+    color: blue;
+  }
+}
+
+.footer{
+  padding: 60px 0;
+  @extend .content-width;
+
+  &__nav{
+    
+  }
+}
