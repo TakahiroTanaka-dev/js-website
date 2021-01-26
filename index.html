@@ -18,25 +18,27 @@
   <div id="global-container">
     <div id="container">
       <div class="mobile-menu__cover"></div>
+      <div class="nav-trigger"></div>
       <header class="header">
         <div class="header__inner">
           <div class="logo">
             <img src="images/8.svg" alt="" class="logo__img">
             <span class="logo__stay">Portfolio</span>
           </div>
+
+          <nav class="header__nav">
+            <ul class="header__ul">
+              <li class="header__li"><About href="" class="btn filled">About me</a></li>
+              <li class="header__li"><Links href="" class="btn filled">Links</a></li>
+              <li class="header__li"><a href="" class="btn filled">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <nav>
-          <ul class="header__ul">
-            <li class="header__li">About me</li>
-            <li class="header__li">Links</li>
-            <li class="header__li"><a href="" class="btn filled">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="mobile-menu__btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </header>
       <div id="content">
         <div class="hero">
@@ -200,27 +202,31 @@
       </footer>
     </div>
     <nav class="mobile-menu">
+      <div class="logo">
+        <img src="images/8.svg" alt="" class="logo__img">
+        <span class="logo__stay">Portfolio</span>
+      </div>
       <ul class="mobile-menu__main">
-          <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">
-                  <span class="main-title">About me</span>
-                  <span class="sub-title">製作者に関して</span>
-              </a>
-          </li>
-          <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">
-                  <span class="main-title">Links</span>
-                  <span class="sub-title">リンク</span>
-              </a>
-          </li>
-          <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">
-                  <span class="main-title">Contact Us</span>
-                  <span class="sub-title">コンタクト方法</span>
-              </a>
-          </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">
+            <span class="main-title">About me</span>
+            <span class="sub-title">製作者に関して</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">
+            <span class="main-title">Links</span>
+            <span class="sub-title">リンク</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">
+            <span class="main-title">Contact Us</span>
+            <span class="sub-title">コンタクト方法</span>
+          </a>
+        </li>
       </ul>
-  </nav>
+    </nav>
   </div>
   <!-- <div class="tween-animate-title animate-title">Animate Title</div> -->
   <!-- <div id="container"> -->
@@ -239,6 +245,7 @@
   <script src="scripts/libs/hero-slider.js"></script>
   <script src="scripts/libs/scroll.js"></script>
   <script src="scripts/libs/text-animation.js"></script>
+  <script src="scripts/libs/mobile.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 

@@ -1,34 +1,16 @@
-$cWhite: white;
-$cBlack: black;
 $cMenuClose: $cBlack;
 $cMenuOpen: $cBlack;
-$cSubTitle: #535353;
-
-#container {
-    position: relative;
-    background-color: teal;
-    height: 100vh;
-    z-index: 2;
-    transition: all 0.5s;
-}
-
-.header {
-    background-color: $cWhite;
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-body {
-    margin: 0;
-}
 
 .mobile-menu {
     position: fixed;
     right: 0;
     top: 60px;
     width: 300px;
+
+    & .logo{
+        padding: 0 40px;
+        font-size: 38px;
+    }
 
     &__btn {
         background-color: unset;
@@ -60,6 +42,7 @@ body {
         visibility: hidden;
         transition: opacity 1s;
         cursor: pointer;
+        z-index: 200;
     }
     &__main {
         padding: 0;
@@ -78,7 +61,7 @@ body {
         display: block;
         margin-top: 30px;
         color: $cBlack;
-        text-decoration: none;
+        text-decoration: none !important;
     }
 }
 
@@ -122,14 +105,4 @@ body {
             }
         }
     }
-}
-
-.main-title {
-    font-weight: 600;
-    font-size: 25px;
-}
-.sub-title {
-    display: block;
-    font-size: 14px;
-    color: $cSubTitle;
 }
