@@ -131,6 +131,7 @@ main{
 
 .travel{
   @extend .content-width;
+  @extend .mb-lg;
 
   &__inner{
     @extend .flex;
@@ -150,11 +151,7 @@ main{
       transform-origin: right;
     }
 
-    &.inview{
-      &::before{
-        transform: translateY(-50%);
-      }
-    }
+    
   }
 
   &__sub{
@@ -181,11 +178,18 @@ main{
 
   &__texts{
     @extend .pb-sm;
+
+    &.inview{
+      & .travel__title::before{
+        transform: translateY(-50%);
+      }
+    }
   }
 }
 
 .houses{
   @extend .content-width;
+  @extend .mb-lg;
 
   &__inner{
     @extend .flex;  
@@ -252,6 +256,7 @@ main{
   &__btn{
     text-align: center;
     flex-basis: 100%;
+    @extend .mb-lg;
   }
 
   &__img{
@@ -312,7 +317,7 @@ main{
 }
 
 .side{
-  // display: none;
+  display: none;
   position: fixed;
   top: 70%;
   transform: translateY(-50%);

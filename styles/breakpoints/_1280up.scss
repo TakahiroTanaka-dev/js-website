@@ -18,3 +18,35 @@ Stylesheet: 1280px以上のモニタで適用
     flex-basis: 23%;
   }
 }
+
+.side{
+  display: block;
+  position: fixed;
+  top: 70%;
+  transform: translateY(-50%);
+  color: $cBlack;
+
+  & a,
+  & span {
+    color: $cBlack;
+    text-decoration: none !important;
+    margin: 0 40px;
+    vertical-align: middle;
+  }
+
+  &.left{
+    left: 50px;
+    & .side__inner{
+      transform-origin: top left;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &.right{
+    right: 50px;
+    & .side__inner{
+      transform-origin: top right;
+      transform: rotate(90deg);
+    }
+  }
+}

@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const so3 = new ScrollObserver('.nav-trigger', navAnimation, {once: false});
 
+    const so4 = new ScrollObserver('.appear', inview);
+
     new MobileMenu();
 });
 
