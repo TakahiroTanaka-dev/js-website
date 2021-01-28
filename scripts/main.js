@@ -27,6 +27,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    const sides = document.querySelectorAll('.side')
+    const sideAnimation = function (el, inview){
+        
+        if(inview){
+            this.sides.forEach( side => {
+                side.classList.remove('inview');
+            })
+        } else {
+            this.sides.forEach( side => {
+                side.classList.add('inview');
+            })
+        }
+    }
+
     const so = new ScrollObserver('.tween-animate-title', cb);
 
     const so2 = new ScrollObserver('.tween-animate-title', inview);
@@ -34,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const so3 = new ScrollObserver('.nav-trigger', navAnimation, {once: false});
 
     const so4 = new ScrollObserver('.appear', inview);
+
+    const so5 = new ScrollObserver('#main-content', sideAnimation);
 
     new MobileMenu();
 });
